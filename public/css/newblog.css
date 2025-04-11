@@ -1,0 +1,88 @@
+/* newblog.css - New blog creation page styles */
+@import url('base.css');
+@import url('navbar-footer.css');
+
+.editor-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #345790;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#title {
+  font-size: 1.2rem;
+  padding: 0.75rem;
+}
+
+#body {
+  min-height: 300px;
+  resize: vertical;
+  padding: 0.75rem;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+#footer {
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+
+#submitBlog {
+  display: block;
+  margin: 1.5rem auto;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submitBlog:hover {
+  background-color: #345790;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.preview-button {
+  background-color: transparent;
+  color: #4a6fa5;
+  border: 1px solid #4a6fa5;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.preview-button:hover {
+  background-color: #f0f4f8;
+}
+
+@media (max-width: 850px) {
+  .editor-container {
+    margin: 0 0.5rem;
+  }
+  
+  #submitBlog {
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Create New Blog</title>
+        <meta name="description" content="Create a new blog post">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../css/newblog.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="../../index.html" class="navbar-logo">BlogSpace</a>
+                <div class="navbar-links">
+                    <a id="home" href="../../profile">profile</a>
+                    <a href="#">Link-2</a>
+                    <a href="#">Link-3</a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="editor-container">
+            <h2>Create New Blog Post</h2>
+            <form>
+                <input type="text" placeholder="Title" id="title">
+                <textarea id="body" placeholder="Write your blog"></textarea>
+                <input type="text" placeholder="Footer" id="footer">
+                <div class="controls">
+                    <button type="button" class="preview-button">Preview</button>
+                    <button type="button" id="submitBlog">Publish Blog</button>
+                </div>
+            </form>
+        </div>
+        
+        <footer class="page-footer">
+            <p>
+                <a href="#">Hello</a> | 
+                <a href="#">World</a> | 
+                <a href="#">cool</a>
+            </p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>  
+        <script src="../../scripts/newBlog.js" async defer></script>
+    </body>
+</html>

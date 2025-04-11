@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login</title>
+        <meta name="description" content="Login to your account">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/login.css">
+    </head>
+    <body>
+      <header>
+            <nav class="navbar">
+                <a href="../index.html" class="navbar-logo">BlogSpace</a>
+                <div class="navbar-links">
+                    <a id="home" href="../profile">profile</a>
+                    <a href="#">Link-2</a>
+                    <a href="#">Link-3</a>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="login-container">
+            <h3>Welcome back!</h3>
+            <form>
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="password" placeholder="Password" id="pwd" required>
+                <button id="login" type="submit">Login</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+        
+        <footer class="page-footer">
+            <p>
+                <a href="#">Hello</a> | 
+                <a href="#">World</a> | 
+                <a href="#">cool</a>
+            </p>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./scripts/login.js" async defer></script>
+    </body>
+</html>

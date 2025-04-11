@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>User Profile</title>
+        <meta name="description" content="User profile page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/profile.css">
+    </head>
+    <body>
+     <header>
+            <nav class="navbar">
+                <a href="./index.html" class="navbar-logo">BlogSpace</a>
+                <div class="navbar-links">
+                    <a id="home" href="./profile">profile</a>
+                    <a href="#">Link-2</a>
+                    <a href="#">Link-3</a>
+                </div>
+                <div class="auth-buttons">
+                    <button id="logout">Logout</button>
+                </div>
+            </nav>
+        </header>
+
+        
+        <div class="profile-header">
+            <div class="profile-avatar"></div>
+            <div class="profile-info">
+                <h3 id="username"></h3>
+            </div>
+        </div>
+        
+        <div class="profile-stats">
+            <div class="stats-card followers">
+                <div class="number" id="followers-count">0</div>
+                <div class="label">Followers</div>
+            </div>
+            <div class="stats-card totalPosts">
+                <div class="number" id="posts-count">0</div>
+                <div class="label">Posts</div>
+            </div>
+        </div>
+        
+        <div class="blog-scroll-wrapper">
+            <button class="scroll-left">←</button>
+            <div class="blog-scroll">
+            </div>
+            <button class="scroll-right">→</button>
+        </div>
+
+        <button id="NewBlog">New Blog</button>
+
+        <footer class="page-footer">
+            <p>
+                <a href="#">Hello</a> | 
+                <a href="#">World</a> | 
+                <a href="#">cool</a>
+            </p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>  
+        <script src="./scripts/profile.js" async defer></script>
+    </body>
+</html>
