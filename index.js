@@ -17,7 +17,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3000', 
+    origin: 'https://blogspace-j2z7.onrender.com', 
     credentials: true                
   }));
 
