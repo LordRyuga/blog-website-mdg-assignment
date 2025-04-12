@@ -1,5 +1,6 @@
 let username = document.getElementById('username');
 const newBlog = document.getElementById('NewBlog');
+let postCount = document.getElementById('posts-count');
 
 newBlog.addEventListener('click', ()=> {
     window.location.href = 'api/user/newBlog';
@@ -42,7 +43,10 @@ async function loadBlogs() {
         
         const blogs = res.data;
         const blogContainer = document.querySelector('.blog-scroll');
-        console.log(blogs);
+        // console.log(blogs);
+        // console.log(blogs.length);
+        // console.log(postCount);
+        postCount.innerText = blogs.length;
         blogs.forEach(blog => {
             console.log(blog.title);
             const card = document.createElement('div');
